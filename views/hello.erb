@@ -1,3 +1,18 @@
 <h1>
   This is an erb file that I am calling instead of using a string
 </h1>
+
+<% 3.times do%>
+	<h2>
+		This is me using ruby methods in an erb file to repeat this message three times!
+	</h2>
+<%end%>
+
+<%counter = 20%>
+
+<p> I made a counter that counts down from 20 </p>
+
+<% until counter <=0%>
+  <p> The counter currently is <%="#{counter}"%> </p>
+  <%counter -= 1%>
+<%end%>
