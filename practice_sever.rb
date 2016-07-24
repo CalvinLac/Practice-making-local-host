@@ -1,6 +1,7 @@
 require 'sinatra'
+require 'erb'
 
 # Set our root path to respond with "Hello, World"
 get '/' do
-  "<h1>Hello, World</h1>"
+  erb :hello
 end
